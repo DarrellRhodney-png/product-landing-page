@@ -1,0 +1,150 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+header {
+    background: #fff;
+    border-bottom: 2px solid red;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.navbar h1 {
+    color: red;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #222;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: red;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.hero-text h2 {
+    color: red;
+}
+
+.hero button {
+    background: red;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #cc0000;
+}
+
+.hero img {
+    width: 300px;
+}
+
+.features {
+    text-align: center;
+    padding: 40px;
+}
+
+.features h2 {
+    color: red;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid red;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.countdown {
+    text-align: center;
+    padding: 30px;
+}
+
+.countdown h2 {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-top: 2px solid red;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #222;
+}
+
+footer a:hover {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        border: 1px solid red;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
