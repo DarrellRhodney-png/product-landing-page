@@ -4,147 +4,188 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff;
-    color: #222;
+    font-family: 'Arial', sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
 }
 
+/* HEADER */
 header {
-    background: #fff;
-    border-bottom: 2px solid red;
+    background: #ffffff;
+    border-bottom: 2px solid #e60000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px 25px;
 }
 
 .navbar h1 {
-    color: red;
+    color: #e60000;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .nav-links a {
-    color: #222;
     text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: red;
+    color: #e60000;
 }
 
-.menu-btn {
-    display: none;
-    font-size: 20px;
-    background: none;
-    border: none;
-    color: red;
-}
-
+/* HERO */
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 50px;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 40px;
 }
 
 .hero-text h2 {
-    color: red;
+    color: #e60000;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
 }
 
 .hero button {
-    background: red;
+    background: #e60000;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 22px;
     color: #fff;
+    font-size: 1rem;
     cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
 .hero button:hover {
-    background: #cc0000;
+    background: #b30000;
+    transform: translateY(-2px);
 }
 
 .hero img {
-    width: 300px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+/* FEATURES */
 .features {
     text-align: center;
-    padding: 40px;
+    padding: 70px 20px;
 }
 
 .features h2 {
-    color: red;
+    color: #e60000;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .feature-grid {
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid red;
+    background: #fff;
+    padding: 25px;
+    width: 180px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
     transition: 0.3s;
+    font-weight: 500;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    border-color: #e60000;
 }
 
+/* COUNTDOWN */
 .countdown {
     text-align: center;
-    padding: 30px;
+    padding: 50px 20px;
+    background: #f9f9f9;
 }
 
 .countdown h2 {
-    color: red;
+    color: #e60000;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #fff;
-    border-top: 2px solid red;
+    padding: 25px;
+    background: #ffffff;
+    border-top: 2px solid #e60000;
 }
 
 footer a {
     margin: 0 10px;
     text-decoration: none;
-    color: #222;
+    color: #333;
+    transition: 0.3s;
 }
 
 footer a:hover {
-    color: red;
+    color: #e60000;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 300px;
     }
 
     .nav-links {
         display: none;
         flex-direction: column;
-        background: #fff;
         position: absolute;
         top: 60px;
         right: 0;
+        background: #fff;
         width: 200px;
-        border: 1px solid red;
+        border: 1px solid #eee;
+        padding: 15px;
     }
 
     .menu-btn {
         display: block;
+        font-size: 22px;
+        background: none;
+        border: none;
+        color: #e60000;
     }
 }
